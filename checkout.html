@@ -1,0 +1,239 @@
+<!DOCTYPE HTML>
+<!--
+  LUMI by Noah for Coloby
+  www.coloby.org | Create something with Coloby
+-->
+<html>
+  <head>
+    <title>LUMI Checkout| Think Trade. Think LUMI</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.dropotron.min.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/skel-layers.min.js"></script>
+    <script src="js/init.js"></script>
+    <noscript>
+      <link rel="stylesheet" href="css/skel.css" />
+      <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="css/style-desktop.css" />
+    </noscript>
+    <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+  </head>
+  <body class="homepage">
+
+    <!-- Header -->
+      <div id="header-wrapper">
+        <div id="header">
+          
+          <!-- Logo -->
+            <h1><a href="index.html">LUMI</a></h1>
+          
+          <!-- Nav -->
+            <nav id="nav">
+              <ul>
+                <li class="current"><a href="index.html">Home</a></li>
+                <li>
+                  <a href="">Options</a>
+                  <ul>
+                    <li onclick="openForm()"><a href="#">Buy Coins </a></li>
+                    <li><a href="#">Sell Coins</a></li>
+                    <li><a href="#">Get Loans</a></li>
+                    <li>
+                      
+                    </li>
+                    
+                  </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="">Policies</a></li>
+                <li><a href="">Why Us</a></li>
+              </ul>
+            </nav>
+
+
+            <div id="main-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="12u">
+
+
+              <a href="#" class="button alt" onclick="openForm()">Checkout</a>
+<div class="form-popup" id="myForm">
+<form method="POST" action="https://checkout.flutterwave.com/v3/hosted/pay">
+  <input type="hidden" name="public_key" value="FLWPUBK_TEST-SANDBOXDEMOKEY-X" />
+  <input type="email" name="customer[email]" placeholder="email" />
+  <input type="number" name="customer[phone_number]" placeholder="phone number" />
+  <input type="name" name="customer[name]" placeholder="First Name   Last Name" />
+  <input type="hidden" name="tx_ref" value="bitethtx-019203" />
+  <input type="number" name="amount" placeholder="Amount" />
+  <input type="hidden" name="currency" value="NGN" />
+  <input type="hidden" name="meta[token]" value="54" />
+  <input type="hidden" name="redirect_url" value="https://demoredirect.localhost.me/" />
+  
+  <button class="button" type="submit">CHECKOUT</button> 
+</form>
+</div>
+</div>
+          </div>
+              
+          
+        </div>
+      </div>
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+<!-- Footer -->
+      <div id="footer-wrapper">
+        <section id="footer" class="container">
+          <div class="row">
+            <div class="8u">
+              <section>
+                <header>
+                  <h2>Our Calendar</h2>
+                </header>
+                <ul class="dates">
+                  <li>
+                    <span class="date">Dec <strong>2</strong></span>
+                    <h3><a href="#">Launch Date</a></h3>
+                    <p>LUMI's official launch date. Be ready to get sweeped off.</p>
+                  </li>
+                  <li>
+                    <span class="date">Dec <strong>2</strong></span>
+                    <h3><a href="#">Coin Spree contest</a></h3>
+                    <p>LUMI will be gifting free coins to our first 50 during transactions with us.</p>
+                  </li>
+                  <li>
+                    <span class="date">Dec <strong>5</strong></span>
+                    <h3><a href="#">CEO Official Statement</a></h3>
+                    <p>Our CEO will be speaking publicly on what LUMI is all about.</p>
+                  </li>
+                  <li>
+                    <span class="date">Dec <strong>7</strong></span>
+                    <h3><a href="#">LUMI's Official Bot test running</a></h3>
+                    <p>LUMI will be test running their first official trading bot before public use.</p>
+                  </li>
+                  <li>
+                    <span class="date">Dec <strong>25</strong></span>
+                    <h3><a href="#">LUMI Christmas Fest</a></h3>
+                    <p>LUMI be running a christmasspecial to concurrent users.</p>
+                  </li>
+                </ul>
+              </section>
+            </div>
+            <div class="4u">
+              <section>
+                <header>
+                  <h2>What's this all about?</h2>
+                </header>
+                <a href="#" class="image featured"><img src="images/pic10.jpg" alt="" /></a>
+                <p>
+                  This is <strong>LUMI</strong> a fully fledged, fully responsive site designed for people to trade with much ease
+               It's released for everyone to use
+                   &ndash; note that trading is risky!
+                </p>
+                <footer>
+                  <a href="#" class="button">Find out more</a>
+                </footer>
+              </section>
+            </div>
+          </div>
+          <div class="row">
+            <div class="4u">
+              <section>
+                <header>
+                  <h2>Our Links</h2>
+                </header>
+                <ul class="divided">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Buy Coins</a></li>
+                  <li><a href="#">Sell Coins</a></li>
+                  <li><a href="#">Why LUMI?</a></li>
+                  <li><a href="#">Charges</a></li>
+                </ul>
+              </section>
+            </div>
+            <div class="4u">
+              <section>
+                <header>
+                  <h2>Privacy</h2>
+                </header>
+                <ul class="divided">
+                  <li><a href="#">Policies</a></li>
+                  <li><a href="#">Licenses</a></li>
+                  <li><a href="#">Languages</a></li>
+                  <li><a href="#">Need Help?</a></li>
+                  <li><a href="#">Our Lawyers</a></li>
+                  <li><a href="#">More Info</a></li>
+                </ul>
+              </section>
+            </div>
+            <div class="4u">
+              <section>
+                <header>
+                  <h2>Connect to LUMI</h2>
+                </header>
+                <ul class="social">
+                  <li><a class="icon fa-facebook" href="#"><span class="label">Facebook</span></a></li>
+                  <li><a class="icon fa-twitter" href="#"><span class="label">Twitter</span></a></li>
+                  <!-- <li><a class="icon fa-dribbble" href="#"><span class="label">Dribbble</span></a></li> -->
+                  <li><a class="icon fa-linkedin" href="#"><span class="label">LinkedIn</span></a></li>
+                  <!-- <li><a class="icon fa-google-plus" href="#"><span class="label">Google+</span></a></li> -->
+                </ul>
+                <ul class="contact">
+                  <li>
+                    <h3>Address</h3>
+                    <p>
+                      LUMI Incorporated<br />
+                      1234 Somewhere Road Suite<br />
+                      Lagos,
+                    </p>
+                  </li>
+                  <li>
+                    <h3>Mail</h3>
+                    <p><a href="#">lumisupport@lumi.com</a></p>
+                  </li>
+                  <li>
+                    <h3>Phone</h3>
+                    <p>(234) 000-0000</p>
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </div>
+          <div class="row">
+            <div class="12u">
+            
+              <!-- Copyright -->
+                <div id="copyright">
+                  <ul class="links">
+                    <li>&copy; LUMI.com. All rights reserved.</li><li>Design: <a href="/">LUMI</a></li>
+                  </ul>
+                </div>
+
+            </div>
+          </div>
+        </section>
+      </div>
+
+
+
+<!-- <div class="scroll-left">
+         <a href="">Current Prices</a>
+     <marquee behaviour="scroll" direction="left">
+     BTCETH - $300 &#8226 BTCUSDT - $120 &#8226 ETHUSDT - $100 &#8226 SANDUSDT - $120
+     BNBUSDT - $300 &#8226 BNBETH - $120 BTCLUM - $300 &#8226 BTCUSDT - $120 &#8226 *<i>Prices are subjected to changes continually</i>
+      </marquee>
+       </div> -->
+
+  </body>
+</html>
