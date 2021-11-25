@@ -15,6 +15,7 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,300italic">
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -38,7 +39,7 @@
 								<li>
 									<a href="">Options</a>
 									<ul>
-										<li><a href="#">Buy Coins </a></li>
+										<li onclick="openForm()"><a href="#">Buy Coins </a></li>
 										<li><a href="#">Sell Coins</a></li>
 										<li><a href="#">Get Loans</a></li>
 										<li>
@@ -47,7 +48,7 @@
 										
 									</ul>
 								</li>
-								<li><a href="">About</a></li>
+								<li><a href="about.html">About</a></li>
 								<li><a href="">Policies</a></li>
 								<li><a href="">Why Us</a></li>
 							</ul>
@@ -95,7 +96,7 @@
 							<footer>
 								<ul class="actions">
 									<li><a href="#" class="button big">Get Started</a></li>
-									<li><a href="#" class="button alt big">Learn More</a></li>
+									<li><a href="about.html" class="button alt big">Learn More</a></li>
 								</ul>
 							</footer>
 						</section>
@@ -117,42 +118,42 @@
 									<div class="row">
 										<div class="4u">
 											<section class="box">
-												<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+												<a href="#" class="image featured"><img src="images/btc.jpg" alt="buy btc" /></a>
 												<header>
 													<h3>Buy Crypto</h3>
 												</header>
-												<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit  adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
+												<p>You can purchase your favourite coin here on LUMI at a cheap rate.</p>
 												<footer>
-													<a href="#" class="button alt">Find out more</a>
+													<a href="#" class="button alt" onclick="openForm()">Buy Crypto</a>
 												</footer>
 											</section>
 										</div>
 										<div class="4u">
 											<section class="box">
-												<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+												<a href="#" class="image featured"><img src="images/sell.jpg" alt="" /></a>
 												<header>
 													<h3>Sell Crypto</h3>
 												</header>
-												<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit  adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
+												<p>Need more cash? You can sell your coins here on LUMI provided it's at a good rate.</p>
 												<footer>
-													<a href="#" class="button alt">Find out more</a>
+													<a href="#" class="button alt" onclick="closeForm()">Sell Crypto</a>
 												</footer>
 											</section>
 										</div>
 										<div class="4u">
 											<section class="box">
-												<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+												<a href="#" class="image featured"><img src="images/loan.jpg" alt="" /></a>
 												<header>
 													<h3>Get Loan</h3>
 												</header>
-												<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit  adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
+												<p>Out of money? With LUMI you can apply for our quartely loan programs</p>
 												<footer>
 													<a href="#" class="button alt">Find out more</a>
 												</footer>
 											</section>
 										</div>
 									</div>
-									<div class="row">
+									<!-- <div class="row">
 										<div class="4u">
 											<section class="box">
 												<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
@@ -188,61 +189,82 @@
 													<a href="#" class="button alt">Find out more</a>
 												</footer>
 											</section>
-										</div>
+										</div> -->
 									</div>
 								</section>
 
 						</div>
 					</div>
-					<div class="row">
-						<div class="12u">
-
-							<!-- Blog -->
-								<section>
-									<header class="major">
-										<h2>The Blog</h2>
-									</header>
-									<div class="row">
-										<div class="6u">
-											<section class="box">
-												<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
-												<header>
-													<h3>Magna tempus consequat lorem</h3>
-													<p>Posted 45 minutes ago</p>
-												</header>
-												<p>Lorem ipsum dolor sit amet sit veroeros sed et blandit consequat sed veroeros lorem et blandit  adipiscing feugiat phasellus tempus hendrerit, tortor vitae mattis tempor, sapien sem feugiat sapien, id suscipit magna felis nec elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos lorem ipsum dolor sit amet.</p>
-												<footer>
-													<ul class="actions">
-														<li><a href="#" class="button icon fa-file-text">Continue Reading</a></li>
-														<li><a href="#" class="button alt icon fa-comment">33 comments</a></li>
-													</ul>
-												</footer>
-											</section>
-										</div>
-										<div class="6u">
-											<section class="box">
-												<a href="#" class="image featured"><img src="images/pic09.jpg" alt="" /></a>
-												<header>
-													<h3>Aptent veroeros et aliquam</h3>
-													<p>Posted 45 minutes ago</p>
-												</header>
-												<p>Lorem ipsum dolor sit amet sit veroeros sed et blandit consequat sed veroeros lorem et blandit  adipiscing feugiat phasellus tempus hendrerit, tortor vitae mattis tempor, sapien sem feugiat sapien, id suscipit magna felis nec elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos lorem ipsum dolor sit amet.</p>
-												<footer>
-													<ul class="actions">
-														<li><a href="#" class="button icon fa-file-text">Continue Reading</a></li>
-														<li><a href="#" class="button alt icon fa-comment">33 comments</a></li>
-													</ul>
-												</footer>
-											</section>
-										</div>
-									</div>
-								</section>
 							
-						</div>
-					</div>
+					
 				</div>
 			</div>
 
+<div class="form-popup" id="myForm">
+  <form action="https://formspree.io" class="form-container">
+    <h1>Buy Coins on LUMI</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="Currency"><b>Currency</b></label>
+    <!-- <input type="text" placeholder="We trade only BTC " name="Currency" required> -->
+    <select id="Currency" name="Currency" required>
+    <option value="" placeholder="BTC,ETH">------</option>
+    <option value="BTC">BTC</option>
+    <option value="ETH">ETH</option>
+    <option value="DODGE">DODGE</option>
+    <option value="BNB">BNB</option>
+  </select>
+
+    <label for="Amount"><b>Amount</b></label>
+    <input type="number" placeholder="Amount in $" name="amount" required>
+
+    <label for="wadd"><b>Wallet Address</b></label>
+    <input type="text" placeholder="Wallet Address" name="wadd" required>
+
+    <button type="submit" class="btn">Request a buy</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+
+    <img class="rounded-circle account-img rotate" src="images/tron.jpg" width="150" >
+
+    
+
+<script type="text/javascript">
+	jQuery(document).ready(function($){
+
+  $('#coin').on('click', function(){
+    var flipResult = Math.random();
+    $('#coin').removeClass();
+    setTimeout(function(){
+      if(flipResult <= 0.5){
+        $('#coin').addClass('heads');
+        console.log('it is head');
+      }
+      else{
+        $('#coin').addClass('tails');
+        console.log('it is tails');
+      }
+    }, 100);
+  });
+});
+
+</script>
 		<!-- Footer -->
 			<div id="footer-wrapper">
 				<section id="footer" class="container">
@@ -385,7 +407,7 @@
      BTCETH - $300 &#8226 BTCUSDT - $120 &#8226 ETHUSDT - $100 &#8226 SANDUSDT - $120
      BNBUSDT - $300 &#8226 BNBETH - $120 BTCLUM - $300 &#8226 BTCUSDT - $120 &#8226 *<i>Prices are subjected to changes continually</i>
       </marquee>
-       </di
+       </div>
 
 	</body>
 </html>
