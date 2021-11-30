@@ -2,10 +2,12 @@
 
 <html>
 	<head>
-		<title>LUMI | Think Trade. Think LUMI</title>
+		<title>LUMI - Think Trade. Think LUMI</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
+		  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
 		<script src="js/jquery.min.js"></script>
 		<script src="js/jquery.dropotron.min.js"></script>
@@ -115,7 +117,7 @@
 									<div class="row">
 										<div class="4u">
 											<section class="box">
-												<a href="#" class="image featured"><img src="images/btc.jpg" alt="buy btc" /></a>
+												<a href="#" class="image featured"><img src="https://media.istockphoto.com/photos/block-chain-cryptocurrency-business-strategy-ideas-concept-bit-coin-picture-id1146697288?b=1&k=20&m=1146697288&s=170667a&w=0&h=A-W5OJNTb0WQENoyn7HnAN8_iXdrE6BRqSdigZcsUzs=" alt="buy btc" /></a>
 												<header>
 													<h3>Buy Crypto</h3>
 												</header>
@@ -127,66 +129,33 @@
 										</div>
 										<div class="4u">
 											<section class="box">
-												<a href="#" class="image featured"><img src="images/sell.jpg" alt="" /></a>
+												<a href="#" class="image featured"><img src="https://media.istockphoto.com/photos/trading-symbol-bitcoin-buy-and-sell-concept-hands-holding-bitcoin-and-picture-id1246583866?b=1&k=20&m=1246583866&s=170667a&w=0&h=DQHpapvCKoJ7WUcxIJ2ft8Khg_0p-eS4cB_tqjTNhWo=" alt="" /></a>
 												<header>
 													<h3>Sell Crypto</h3>
 												</header>
-												<p>Need more cash? You can sell your coins here on LUMI provided it's at a good rate.</p>
+												<p>Need more cash? You can sell your coins here on LUMI. Sell fast and get paid fast. LUMI has got you covered.</p>
 												<footer>
-													<a href="#" class="button alt" onclick="closeForm()">Sell Crypto</a>
+													<a href="#" class="button alt" >Sell Crypto</a>
 												</footer>
 											</section>
 										</div>
 										<div class="4u">
 											<section class="box">
-												<a href="#" class="image featured"><img src="images/loan.jpg" alt="" /></a>
+												<a href="#" class="image featured"><img src="https://images.unsplash.com/photo-1596923572042-9bb3b78f2b74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGxvYW5zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" /></a>
 												<header>
 													<h3>Get Loan</h3>
 												</header>
 												<p>Out of money? With LUMI you can apply for our quartely loan programs</p>
 												<footer>
-													<a href="#" class="button alt">Find out more</a>
+													<a href="#" class="button alt" onclick="opForm()">Find out more</a>
 												</footer>
 											</section>
 										</div>
 									</div>
-									<!-- <div class="row">
-										<div class="4u">
-											<section class="box">
-												<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
-												<header>
-													<h3>Secure Coin</h3>
-												</header>
-												<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit  adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
-												<footer>
-													<a href="#" class="button alt">Find out more</a>
-												</footer>
-											</section>
+									<div class="row1">
+    <!-- <img class="rounded-circle account-img rotate" src="images/tron.jpg" width="150" > -->
+										
 										</div>
-										<div class="4u">
-											<section class="box">
-												<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
-												<header>
-													<h3>Invest Coin</h3>
-												</header>
-												<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit  adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
-												<footer>
-													<a href="#" class="button alt">Find out more</a>
-												</footer>
-											</section>
-										</div>
-										<div class="4u">
-											<section class="box">
-												<a href="#" class="image featured"><img src="images/pic07.jpg" alt="" /></a>
-												<header>
-													<h3>Use our Bot</h3>
-												</header>
-												<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit  adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
-												<footer>
-													<a href="#" class="button alt">Find out more</a>
-												</footer>
-											</section>
-										</div> -->
 									</div>
 								</section>
 
@@ -237,8 +206,42 @@ function closeForm() {
 }
 </script>
 
+<!-- Loan Button -->
+<div class="form-popup" id="loanForm">
+  <form action="https://formspree.io" class="form-container">
+    <h1>Buy Coins on LUMI</h1>
 
-    <img class="rounded-circle account-img rotate" src="images/tron.jpg" width="150" >
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="Amount"><b>Amount</b></label>
+    <input type="number" placeholder="Amount in Naira" name="amount" required>
+
+<label for="description">Reasons for Loan?</label>
+    <textarea  name="description" required>
+    	
+    </textarea>
+
+    <button type="submit" class="btn">Request a Loan</button>
+    <button type="button" class="btn cancel" onclick="clForm()">Close</button>
+  </form>
+</div>
+
+
+<script>
+function opForm() {
+  document.getElementById("loanForm").style.display = "block";
+}
+
+function clForm() {
+  document.getElementById("loanForm").style.display = "none";
+}
+</script>
+
+<!-- End Loan Form -->
+
+
+
 
     
 
