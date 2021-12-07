@@ -8,6 +8,8 @@
 		<meta name="keywords" content="" />
 		  <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <link rel="shortcut icon" href="images/lumi.jpg" type="image/x-icon">
 		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
 		<script src="js/jquery.min.js"></script>
 		<script src="js/jquery.dropotron.min.js"></script>
@@ -15,17 +17,19 @@
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
 		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,300italic">
+		
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-desktop.css" />
 		</noscript>
+
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
 	<body class="homepage">
 
 		<!-- Header -->
-			<div id="header-wrapper">
+			<div id="header-wrapper" data-aos="fade-up">
 				<div id="header">
 					
 					<!-- Logo -->
@@ -39,7 +43,7 @@
 									<a href="">Options</a>
 									<ul>
 										<li onclick="openForm()"><a href="#">Buy Coins </a></li>
-										<li><a href="#">Sell Coins</a></li>
+										<li><a href="sell.html">Sell Coins</a></li>
 										<li><a href="#">Get Loans</a></li>
 										<li>
 											
@@ -54,15 +58,16 @@
 						</nav>
 
 					<!-- Banner -->
-						<section id="banner">
+						<section id="banner" data-aos="fade-up">
 							<header>
 								<h2>Welcome Guest!! This is LUMI.</h2>
-								<p>A place where you can trade crypto by registering with your mail</p>
+								<p>A place where you can trade crypto with just your mail</p>
+								
 							</header>
 						</section>
 
 					<!-- Intro -->
-						<section id="intro" class="container">
+						<section id="intro" class="container" data-aos="zoom-in" data-aos-delay="300">
 							<div class="row">
 								<div class="4u">
 									<section class="first">
@@ -74,7 +79,7 @@
 									</section>
 								</div>
 								<div class="4u">
-									<section class="middle">
+									<section class="middle" data-aos="zoom-in">
 										<i class="icon featured alt fa-flash"></i>
 										<header>
 											<h2>Fast, Powerful & Lightweight</h2>
@@ -83,7 +88,7 @@
 									</section>
 								</div>
 								<div class="4u">
-									<section class="last">
+									<section class="last" data-aos="zoom-in">
 										<i class="icon featured alt2 fa-star"></i>
 										<header>
 											<h2>Highly Rated</h2>
@@ -104,7 +109,7 @@
 			</div>
 
 		<!-- Main -->
-			<div id="main-wrapper">
+			<div id="main-wrapper" data-aos="zoom-in">
 				<div class="container">
 					<div class="row">
 						<div class="12u">
@@ -135,10 +140,12 @@
 												</header>
 												<p>Need more cash? You can sell your coins here on LUMI. Sell fast and get paid fast. LUMI has got you covered.</p>
 												<footer>
-													<a href="#" class="button alt" >Sell Crypto</a>
+													<a href="sell.html" class="button alt">Sell Crypto</a>
 												</footer>
 											</section>
 										</div>
+
+
 										<div class="4u">
 											<section class="box">
 												<a href="#" class="image featured"><img src="https://images.unsplash.com/photo-1596923572042-9bb3b78f2b74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGxvYW5zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" /></a>
@@ -167,11 +174,11 @@
 			</div>
 
 <div class="form-popup" id="myForm">
-  <form action="https://formspree.io/f/mvolpjaa" class="form-container" method="POST">
+  <form action="https://formspree.io" class="form-container">
     <h1>Buy Coins on LUMI</h1>
 
     <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email"  required>
+    <input type="text" placeholder="Enter Email" name="email" required>
 
     <label for="Currency"><b>Currency</b></label>
     <!-- <input type="text" placeholder="We trade only BTC " name="Currency" required> -->
@@ -205,6 +212,18 @@ function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
 </script>
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- Loan Button -->
 <div class="form-popup" id="loanForm">
