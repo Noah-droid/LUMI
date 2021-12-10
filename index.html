@@ -4,13 +4,13 @@
 	<head>
 		<title>LUMI - Think Trade. Think LUMI</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
+		<meta name="description" content="LUMI is a site developed to enable crypto transactions easy with just the use of your email" />
+		<meta name="keywords" content="LUMI, Trading" />
 		  <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <link rel="shortcut icon" href="images/lumi.jpg" type="image/x-icon">
-		
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
 		<script src="js/jquery.min.js"></script>
 		<script src="js/jquery.dropotron.min.js"></script>
 		<script src="js/skel.min.js"></script>
@@ -42,7 +42,7 @@
 								<li>
 									<a href="">Options</a>
 									<ul>
-										<li onclick="openForm()"><a href="#">Buy Coins </a></li>
+										<li ><a href="#" onclick="openForm()">Buy Coins </a></li>
 										<li><a href="sell.html">Sell Coins</a></li>
 										<li><a href="#">Get Loans</a></li>
 										<li>
@@ -52,8 +52,8 @@
 									</ul>
 								</li>
 								<li><a href="about.html">About</a></li>
-								<li><a href="">Policies</a></li>
-								<li><a href="">Why Us</a></li>
+								<li><a href="policies.html">Policies</a></li>
+								<li><a href="terms.html">Terms</a></li>
 							</ul>
 						</nav>
 
@@ -99,8 +99,9 @@
 							</div>
 							<footer>
 								<ul class="actions">
-									<li><a href="#" class="button big">Get Started</a></li>
-									<li><a href="about.html" class="button alt big">Learn More</a></li>
+									<li><a href="#" class="button big" onclick="openForm()">Buy Coins</a></li>
+									<li><a href="sell.html" class="button alt big">Sell Coins</a></li>
+									<li><a href="about.html" class="button big">Learn More</a></li>
 								</ul>
 							</footer>
 						</section>
@@ -154,7 +155,7 @@
 												</header>
 												<p>Out of money? With LUMI you can apply for our quartely loan programs</p>
 												<footer>
-													<a href="#" class="button alt" onclick="opForm()">Find out more</a>
+													<a href="#" class="button alt" onclick="opForm()">Apply Here</a>
 												</footer>
 											</section>
 										</div>
@@ -174,7 +175,7 @@
 			</div>
 
 <div class="form-popup" id="myForm">
-  <form action="https://formspree.io" class="form-container">
+  <form  class="form-container" netlify>
     <h1>Buy Coins on LUMI</h1>
 
     <label for="email"><b>Email</b></label>
@@ -196,9 +197,12 @@
     <label for="wadd"><b>Wallet Address</b></label>
     <input type="text" placeholder="Wallet Address" name="wadd" required>
 
+  <p><input type="checkbox" name="checkbox"> You agree to LUMI's <a href="terms">terms</a> before submitting this form?</p>
+
     <button type="submit" class="btn">Request a buy</button>
     <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
   </form>
+
 </div>
 
 
@@ -227,7 +231,7 @@ function closeForm() {
 
 <!-- Loan Button -->
 <div class="form-popup" id="loanForm">
-  <form action="https://formspree.io" class="form-container">
+  <form  class="form-container" netlify>
     <h1>Buy Coins on LUMI</h1>
 
     <label for="email"><b>Email</b></label>
@@ -237,7 +241,7 @@ function closeForm() {
     <input type="number" placeholder="Amount in Naira" name="amount" required>
 
 <label for="description">Reasons for Loan?</label>
-    <textarea  name="description" required>
+    <textarea  name="description" placeholder="Reasons Why You need a Loan" required>
     	
     </textarea>
 
@@ -259,9 +263,10 @@ function clForm() {
 
 <!-- End Loan Form -->
 
+<div>
+    <img class="rounded-circle account-img" src="data:image/png;base64,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" width="150">
 
-
-
+    </div>
     
 
 <script type="text/javascript">
@@ -329,9 +334,9 @@ function clForm() {
 								</header>
 								<a href="#" class="image featured"><img src="images/lumi.jpg" alt="" /></a>
 								<p>
-									This is <strong>LUMI</strong> a fully fledged, fully responsive site designed for people to trade with much ease
-							 It's released for everyone to use
-									 &ndash; note that trading is risky!
+									This is <strong>LUMI</strong> a fully fledged, fully responsive site designed for people to trade with much ease just with the use of email. Easy right? Try LUMI today
+							 
+									 &ndash; note that cryptocurrency trading is risky. Invest wisely!
 								</p>
 								<footer>
 									<a href="#" class="button">Find out more</a>
@@ -346,12 +351,11 @@ function clForm() {
 									<h2>Our Links</h2>
 								</header>
 								<ul class="divided">
-									<li><a href="#">Home</a></li>
-									<li><a href="#">About Us</a></li>
+									<li><a href="index.html">Home</a></li>
+									<li><a href="about.html">About Us</a></li>
 									<li><a href="#" onclick="openForm()">Buy Coins</a></li>
 									<li><a href="sell.html">Sell Coins</a></li>
-									<li><a href="#">Why LUMI?</a></li>
-									<li><a href="#">Charges</a></li>
+									
 								</ul>
 							</section>
 						</div>
@@ -361,12 +365,10 @@ function clForm() {
 									<h2>Privacy</h2>
 								</header>
 								<ul class="divided">
-									<li><a href="#">Policies</a></li>
-									<li><a href="#">Licenses</a></li>
-									<li><a href="#">Languages</a></li>
-									<li><a href="#">Need Help?</a></li>
-									<li><a href="#">Our Lawyers</a></li>
-									<li><a href="#">More Info</a></li>
+									<li><a href="policies.html">Policies</a></li>
+									<li><a href="terms.html">Terms</a></li>
+
+								
 								</ul>
 							</section>
 						</div>
@@ -377,27 +379,27 @@ function clForm() {
 								</header>
 								<ul class="social">
 									<li><a class="icon fa-facebook" href="#"><span class="label">Facebook</span></a></li>
-									<li><a class="icon fa-twitter" href="#"><span class="label">Twitter</span></a></li>
-									<!-- <li><a class="icon fa-dribbble" href="#"><span class="label">Dribbble</span></a></li> -->
+									<li><a class="icon fa-instagram" href="#"><span class="label">Instagram</span></a></li>
+									
 									<li><a class="icon fa-linkedin" href="#"><span class="label">LinkedIn</span></a></li>
-									<!-- <li><a class="icon fa-google-plus" href="#"><span class="label">Google+</span></a></li> -->
+									
 								</ul>
 								<ul class="contact">
 									<li>
 										<h3>Address</h3>
 										<p>
-											LUMI Incorporated<br />
-											1234 Somewhere Road Suite<br />
+											LUMI Xchange<br />
+											Victoria Island<br />
 											Lagos,
 										</p>
 									</li>
 									<li>
 										<h3>Mail</h3>
-										<p><a href="#">lumisupport@lumi.com</a></p>
+										<p><a href="mailto:Lumiteam2021@gmail.com">lumisupport@lumi.com</a></p>
 									</li>
 									<li>
 										<h3>Phone</h3>
-										<p>(234) 000-0000</p>
+										<p>(234) 907-853-2665</p>
 									</li>
 								</ul>
 							</section>
