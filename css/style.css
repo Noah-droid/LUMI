@@ -297,6 +297,21 @@
 				width: auto;
 			}
 
+.box:hover{
+	background-color: purple;
+	color: white;
+	transition: 0.2s;
+
+}
+
+@media (max-width: 1024px) {
+.box:hover{
+	background-color: purple;
+	color: white;
+	transition: 0.2s;
+
+}
+}
 	/* Button */
 		
 		input[type="button"],
@@ -903,7 +918,9 @@
   }
 }
 
-
+.rounded-circle {
+  border-radius: 50% !important;
+}
 
 /*Buttons Popup Forms*/
 
@@ -1006,7 +1023,8 @@
 .form-container {
   width: 250px;
   padding: 10px;
-  background-color: white;
+  /*background-color: white;*/
+  background-image: url('images/IMG-20211225-WA0005.jpg');
 }
 
 /* Full-width input fields */
@@ -1051,3 +1069,9 @@
 	background-image: url('https://www.shutterstock.com/image-vector/bitcoin-logo-currency-crypto-here-used-767986060');
 background-size: auto;
 }*/
+
+#myForm{
+	background-image: url('images/pup.jpg');
+}
+
+
