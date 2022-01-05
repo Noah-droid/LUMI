@@ -1147,8 +1147,8 @@ background-size: auto;
 
 .thumbnail{
 	display: block;
-	width: auto;
-	height:auto;
+	width: 100%;
+	height:180px;
 	object-fit: cover;
 }
 @media screen and (max-width: 1200px){
